@@ -1,9 +1,10 @@
 {
   "name": "validate-chilean-rut",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "source": "src/index.ts",
   "main": "dist/main.js",
+  "typings": "dist/types.d.ts",
   "module": "dist/module.js",
   "types": "dist/types.d.ts",
   "devDependencies": {
@@ -26,7 +27,8 @@
     "watch": "parcel watch",
     "build": "parcel build",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",

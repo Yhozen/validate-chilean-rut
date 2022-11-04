@@ -1,0 +1,4 @@
+#!include:.gitignore
+!dist
+src/
+tests/
