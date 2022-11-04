@@ -9,13 +9,16 @@
   "devDependencies": {
     "@parcel/packager-ts": "2.7.0",
     "@parcel/transformer-typescript-types": "2.7.0",
+    "@vitest/coverage-c8": "^0.24.5",
     "parcel": "latest",
-    "typescript": ">=3.0.0"
+    "typescript": ">=3.0.0",
+    "vitest": "^0.24.5"
   },
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "repository": {
     "type": "git",
