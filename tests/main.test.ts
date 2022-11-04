@@ -1,16 +1,16 @@
 import { describe, it, expect } from "vitest";
-import { add } from "../src";
+import { clearRut } from "../src";
 
 describe("addition", () => {
-  it("should add two positive numbers", () => {
-    expect(add(2, 3)).toBe(5);
+  it("receive a number rut", () => {
+    expect(clearRut(965917608)).toBe("965917608");
   });
 
-  it("should add a positive and negative number", () => {
-    expect(add(-2, 3)).toBe(1);
+  it("receive a rut with dash", () => {
+    expect(clearRut("96591760-8")).toBe("965917608");
   });
 
-  it("should add two negative numbers", () => {
-    expect(add(-4, -3)).toBe(-7);
+  it("receive with dots and dash", () => {
+    expect(clearRut("96.591.760-8")).toBe("965917608");
   });
 });
