@@ -44,7 +44,6 @@ export const validateRut = (rut: number | string) => {
   const { checkDigit, inverseRut } = splitRut(cleanRut);
 
   const sum = getRutSum(inverseRut);
-  console.log({ sum });
   const calculatedCheckDigit = getCheckDigitFromSum(sum);
 
   return checkDigit === calculatedCheckDigit;

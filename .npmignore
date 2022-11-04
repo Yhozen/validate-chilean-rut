@@ -5,3 +5,4 @@ tests/
 .parcel-cache/
 coverage/
 .github/
+*.log
