@@ -34,6 +34,7 @@ describe("splitRut", () => {
 describe("getRutSum", () => {
   it("get an inverseRut digit array and return the desired value", () => {
     expect(getRutSum("97587621".split(""))).toBe(190);
+    expect(getRutSum("18844757".split("").reverse())).toBe(176);
   });
 });
 
@@ -61,9 +62,8 @@ describe("validateRut", () => {
   it("get validateRut from a number", () => {
     expect(validateRut("76997492-k")).toBe(true);
   });
-  /*
+
   it("get validateRut from a string", () => {
     expect(validateRut("18.844.757-0")).toBe(true);
   });
-  */
 });
