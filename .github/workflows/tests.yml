@@ -2,6 +2,8 @@ name: "Tests"
 on:
   pull_request:
 
+inputs:
+  vite-config-path: "vitest.config.ts"
 jobs:
   test:
     runs-on: ubuntu-latest
