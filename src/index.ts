@@ -22,7 +22,7 @@ export const getRutSum = (stringDigitArray: string[]) => {
 };
 
 export const getCheckDigitFromSum = (sum: number): string => {
-  const remainder = 11 - (sum % 11);
+  const remainder = (11 - (sum % 11)) % 11;
   if (remainder === 10) return "k";
 
   return String(remainder);
