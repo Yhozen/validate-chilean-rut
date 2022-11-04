@@ -38,3 +38,14 @@ export const getCheckDigit = (
 
   return getCheckDigitFromSum(sum);
 };
+
+export const validateRut = (rut: number | string) => {
+  const cleanRut = clearRut(rut);
+  const { checkDigit, inverseRut } = splitRut(cleanRut);
+
+  const sum = getRutSum(inverseRut);
+  console.log({ sum });
+  const calculatedCheckDigit = getCheckDigitFromSum(sum);
+
+  return checkDigit === calculatedCheckDigit;
+};

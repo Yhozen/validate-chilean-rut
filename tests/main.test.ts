@@ -5,6 +5,7 @@ import {
   getCheckDigitFromSum,
   getRutSum,
   splitRut,
+  validateRut,
 } from "../src";
 
 describe("clearRut", () => {
@@ -54,4 +55,15 @@ describe("getCheckDigit", () => {
   it("get checkDigit from a string", () => {
     expect(getCheckDigit("76997492")).toBe("k");
   });
+});
+
+describe("validateRut", () => {
+  it("get validateRut from a number", () => {
+    expect(validateRut("76997492-k")).toBe(true);
+  });
+  /*
+  it("get validateRut from a string", () => {
+    expect(validateRut("18.844.757-0")).toBe(true);
+  });
+  */
 });
