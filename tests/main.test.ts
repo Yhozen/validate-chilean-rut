@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { clearRut } from "../src";
 
-describe("addition", () => {
+describe("clearRut", () => {
   it("receive a number rut", () => {
     expect(clearRut(965917608)).toBe("965917608");
   });
