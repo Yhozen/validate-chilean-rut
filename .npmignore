@@ -2,3 +2,6 @@
 !dist
 src/
 tests/
+.parcel-cache/
+coverage/
+.github/
