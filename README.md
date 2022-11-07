@@ -37,7 +37,7 @@ or in a html environment with unpkg
 
 ## Documentation
 
-### validateRut: (rut: number | string) => boolean;
+### validateRut: (rut: number | string) => boolean
 
 Receives either a number or string rut and returns whether it is a valid rut or not
 
@@ -51,7 +51,7 @@ console.log(validateRut(965917608)); // true
 console.log(validateRut("96.591.760-7")); // false
 ```
 
-### clearRut: (rut: number | string) => string;
+### clearRut: (rut: number | string) => string
 
 Receives either a number or string rut and returns a normalized rut (string)
 
@@ -63,7 +63,7 @@ console.log(clearRut("96591760-8")); // "965917608"
 console.log(clearRut(965917608)); // "965917608"
 ```
 
-### getCheckDigit: (rutWithoutCheckDigit: number | string) => string;
+### getCheckDigit: (rutWithoutCheckDigit: number | string) => string
 
 Receives rut body (everything but the "- checkDigit") either as a number or string rut and returns the check digit as string
 
@@ -76,14 +76,14 @@ console.log(getCheckDigit(96591760)); // "8"
 
 #### **Internal functions (you probably won't use them)**
 
-### splitRut: (cleanRut: string) => { checkDigit: string; inverseRut: string[];};
+### splitRut: (cleanRut: string) => { checkDigit: string; inverseRut: string[];}
 
 Receives a normalized rut and returns the checkDigit and the inverse rut body as an string array
 
-### getRutSum: (stringDigitArray: string[]) => number;
+### getRutSum: (stringDigitArray: string[]) => number
 
 Receives the inverse rut body (string array) and returns the multiplication sum
 
-### getCheckDigitFromSum: (sum: number) => string;
+### getCheckDigitFromSum: (sum: number) => string
 
 Receives the multiplication sum and returns the check digit
