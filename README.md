@@ -86,6 +86,8 @@ console.log(formatRut("96591760-8")); // "96.591.760-8"
 console.log(formatRut(965917608)); // "96.591.760-8"
 ```
 
+> If the rut is **not** valid, it will format it **anyway**.
+
 #### **Internal functions (you probably won't use them)**
 
 ### splitRut: (cleanRut: string) => { checkDigit: string; inverseRut: string[];}

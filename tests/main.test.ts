@@ -81,6 +81,6 @@ describe("formatRut", () => {
     expect(formatRut("18844757-0")).toBe("18.844.757-0");
   });
   it("get formatted rut from a string with 8 digits and dot", () => {
-    expect(formatRut("9.876432k")).toBe("9.876.432-k");
+    expect(formatRut("9876432k")).toBe("9.876.432-k");
   });
 });
