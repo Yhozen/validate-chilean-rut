@@ -74,6 +74,18 @@ console.log(getCheckDigit("96.591.760")); // "8"
 console.log(getCheckDigit(96591760)); // "8"
 ```
 
+### formatRut: (rut: number | string) => string
+
+Receives either a number or string rut and returns a formatted rut (string) with dots and dash.
+
+```ts
+import { formatRut } from "validate-chilean-rut";
+
+console.log(formatRut("96.591.760-8")); // "96.591.760-8"
+console.log(formatRut("96591760-8")); // "96.591.760-8"
+console.log(formatRut(965917608)); // "96.591.760-8"
+```
+
 #### **Internal functions (you probably won't use them)**
 
 ### splitRut: (cleanRut: string) => { checkDigit: string; inverseRut: string[];}

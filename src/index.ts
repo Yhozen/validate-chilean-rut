@@ -48,3 +48,10 @@ export const validateRut = (rut: number | string) => {
 
   return checkDigit === calculatedCheckDigit;
 };
+
+export const formatRut = (rut: number | string): string => {
+	const cleanRut = clearRut(rut);
+	const regex = /^(\d{1,2})(\d{3})(\d{3})([\dkK]{1})$/;
+	const replacement = "$1.$2.$3-$4";
+	return cleanRut.replace(regex, replacement);
+};

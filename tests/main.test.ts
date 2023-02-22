@@ -6,6 +6,7 @@ import {
   getRutSum,
   splitRut,
   validateRut,
+  formatRut,
 } from "../src";
 
 describe("clearRut", () => {
@@ -65,5 +66,21 @@ describe("validateRut", () => {
 
   it("get validateRut from a string", () => {
     expect(validateRut("18.844.757-0")).toBe(true);
+  });
+});
+
+describe("formatRut", () => {
+  it("get formatted rut from a number and 8 digits", () => {
+    expect(formatRut(54328971)).toBe("5.432.897-1");
+  });
+  it("get formatted rut from a string with 9 digits", () => {
+    expect(formatRut("76997492k")).toBe("76.997.492-k");
+  });
+
+  it("get formatted rut from a string with 9 digits", () => {
+    expect(formatRut("18844757-0")).toBe("18.844.757-0");
+  });
+  it("get formatted rut from a string with 8 digits and dot", () => {
+    expect(formatRut("9.876432k")).toBe("9.876.432-k");
   });
 });
