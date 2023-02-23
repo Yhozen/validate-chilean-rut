@@ -1,5 +1,7 @@
 # validate-chilean-rut
 
+Validate chilean ruts as easy as abc. A zero dependencies, lightweight library that normalized and validates chilean ruts. Written in typescript.
+
 <p align="center">
 <a href="https://github.com/Yhozen/validate-chilean-rut/actions?query=workflow=Tests"><img src="https://github.com/Yhozen/validate-chilean-rut/actions/workflows/tests.yml/badge.svg?event=pull_request" alt="validate-chilean-rut CI status" /></a>
 <a href="https://garox.org/" rel="nofollow"><img src="https://img.shields.io/badge/created%20by-@Yhozen-4BBAAB.svg" alt="Created by Garox"></a>
@@ -10,8 +12,6 @@
 <a href="https://www.npmjs.com/package/validate-chilean-rut" rel="nofollow"><img src="https://img.shields.io/github/stars/Yhozen/validate-chilean-rut" alt="stars"></a>
 
 </p>
-
-Validate chilean ruts as easy as abc. A zero dependencies, lightweight library that normalized and validates chilean ruts. Written in typescript.
 
 ## Getting started
 
