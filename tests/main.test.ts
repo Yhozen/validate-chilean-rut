@@ -21,6 +21,10 @@ describe("clearRut", () => {
   it("receive with dots and dash", () => {
     expect(clearRut("96.591.760-8")).toBe("965917608");
   });
+
+  it("receive with leading zeros", () => {
+    expect(clearRut("00000965917608")).toBe("965917608");
+  });
 });
 
 describe("splitRut", () => {
