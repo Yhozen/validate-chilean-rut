@@ -1,6 +1,6 @@
 {
   "name": "validate-chilean-rut",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
   "source": "src/index.ts",
   "main": "dist/main.js",
@@ -12,7 +12,7 @@
     "@parcel/transformer-typescript-types": "2.13.3",
     "@vitest/coverage-v8": "3.0.7",
     "parcel": "latest",
-    "typescript": ">=5.7.3",
+    "typescript": "5.7.3",
     "vitest": "^3.0.7"
   },
   "targets": {
