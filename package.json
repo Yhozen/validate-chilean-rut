@@ -38,8 +38,11 @@
     "url": "git+https://github.com/Yhozen/validate-chilean-rut.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Garox",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": {
     "url": "https://github.com/Yhozen/validate-chilean-rut/issues"
   },
