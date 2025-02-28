@@ -9,12 +9,12 @@
   "types": "dist/types.d.ts",
   "devDependencies": {
     "@changesets/cli": "^2.28.1",
-    "@parcel/packager-ts": "2.7.0",
-    "@parcel/transformer-typescript-types": "2.7.0",
-    "@vitest/coverage-c8": "^0.24.5",
+    "@parcel/packager-ts": "2.13.3",
+    "@parcel/transformer-typescript-types": "2.13.3",
+    "@vitest/coverage-v8": "3.0.7",
     "parcel": "latest",
-    "typescript": ">=3.0.0",
-    "vitest": "^0.24.5"
+    "typescript": "5.7.3",
+    "vitest": "^3.0.7"
   },
   "targets": {
     "main": {
