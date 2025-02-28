@@ -29,7 +29,8 @@
     "build": "parcel build",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "release": "npm run build && changeset publish"
   },
   "repository": {
     "type": "git",
