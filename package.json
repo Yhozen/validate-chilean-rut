@@ -8,6 +8,7 @@
   "module": "dist/module.js",
   "types": "dist/types.d.ts",
   "devDependencies": {
+    "@changesets/cli": "^2.28.1",
     "@parcel/packager-ts": "2.13.3",
     "@parcel/transformer-typescript-types": "2.13.3",
     "@vitest/coverage-v8": "3.0.7",
@@ -28,8 +29,10 @@
     "build": "parcel build",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "release": "npm run build && changeset publish"
   },
+  "packageManager": "yarn@1.22.22",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Yhozen/validate-chilean-rut.git"
@@ -40,5 +43,6 @@
   "bugs": {
     "url": "https://github.com/Yhozen/validate-chilean-rut/issues"
   },
-  "homepage": "https://github.com/Yhozen/validate-chilean-rut#readme"
+  "homepage": "https://github.com/Yhozen/validate-chilean-rut#readme",
+  "dependencies": {}
 }
