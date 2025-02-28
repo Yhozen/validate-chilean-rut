@@ -1,6 +1,6 @@
 {
   "name": "validate-chilean-rut",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
   "source": "src/index.ts",
   "main": "dist/main.js",
